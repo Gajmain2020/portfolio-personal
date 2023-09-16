@@ -5,6 +5,11 @@
   position: relative;
   padding: 8px 0;
   margin-bottom: 30px;
+  transition: 200ms ease-in-out;
+}
+
+.title:hover {
+  text-shadow: 2px 3px 8px var(--cyan);
 }
 
 .subtitle {
@@ -75,9 +80,10 @@
 
 .card_container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 30px;
   padding: 50px 0 20px 0;
 }
@@ -87,11 +93,11 @@
 }
 
 .card_shadow {
-  width: 45%;
+  width: max-content;
   background: "#00cea8";
   background: linear-gradient(90.13deg, #b1bcdc 1.9%, #0086ce 97.5%);
   background: -webkit-linear-gradient(-90.13deg, #b1bcdc 1.9%, #0086ce 97.5%);
-  padding: 1px;
+  padding: 2px;
   border-radius: 60px 10px;
   transition: box-shadow 200ms;
 }

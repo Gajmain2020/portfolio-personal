@@ -1,10 +1,10 @@
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
-import style from './styles/work.module.css';
-import SectionWrapper from '../hoc';
-import { projects } from '../constants';
-import { fadeIn, textVariant } from '../utils/motion';
-import Popup from './Popup';
+import React, { useState } from "react";
+import { motion, AnimatePresence } from "framer-motion";
+import style from "./styles/work.module.css";
+import SectionWrapper from "../hoc";
+import { projects } from "../constants";
+import { fadeIn, textVariant } from "../utils/motion";
+import Popup from "./Popup";
 
 const Work = () => {
   const [isOpen, setOpen] = useState(false);
@@ -30,11 +30,16 @@ const Work = () => {
         {projects.map((project, index) => (
           <motion.div
             key={project.id}
-            variants={fadeIn('up', '', index * 0.4, 0.5)}
+            variants={fadeIn("up", "", index * 0.4, 0.5)}
             index={index}
             className={style.card}
           >
-            <img className={style.img} src={project.img} alt="project sample" loading="lazy" />
+            <img
+              className={style.img}
+              src={project.img}
+              alt="project sample"
+              loading="lazy"
+            />
             <div className={style.card_overlay}>
               <div className={style.card_text}>
                 <div className={style.text}>
@@ -45,7 +50,11 @@ const Work = () => {
                     ))}
                   </p>
                 </div>
-                <button type="button" className={style.btn_container} onClick={() => handlePopupClick(project)}>
+                <button
+                  type="button"
+                  className={style.btn_container}
+                  onClick={() => handlePopupClick(project)}
+                >
                   <span className={style.btn_hover}>Learn more</span>
                   <span className={style.btn}>Learn more</span>
                 </button>
@@ -64,4 +73,4 @@ const Work = () => {
   );
 };
 
-export default SectionWrapper(Work, 'work', 'my-8');
+export default SectionWrapper(Work, "work", "my-8");

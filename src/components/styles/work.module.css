@@ -5,6 +5,11 @@
   position: relative;
   padding: 8px 0;
   margin: 60px auto;
+  transition: 200ms ease-in-out;
+}
+
+.title:hover {
+  text-shadow: 2px 3px 8px var(--cyan);
 }
 
 .title::after {
@@ -30,6 +35,7 @@
   aspect-ratio: 4 / 3;
   position: relative;
   overflow: hidden;
+  background-color: white;
 }
 
 .img {
@@ -55,8 +61,18 @@
   opacity: 0.5;
 }
 
+.card:hover {
+  background: rgba(255, 255, 255, 0.21);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.1px);
+  -webkit-backdrop-filter: blur(7.1px);
+  outline: solid 3px rgb(113, 113, 113);
+  border-radius: 16px;
+}
+
 .card:hover .card_overlay {
-  opacity: 1;
+  opacity: 0.75;
+  border-radius: 16px;
 }
 
 .card_text {
@@ -193,7 +209,6 @@
   top: 10px;
   left: 14px;
   opacity: 0;
-  transform: translate(0, -100%);
 }
 
 .btn_container:hover,

@@ -5,7 +5,6 @@ import SectionWrapper from "../hoc";
 import { technologies } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 import style from "./styles/techstack.module.css";
-import { useEffect } from "react";
 
 const TechStack = () => {
   const [stack, setStack] = useState("all");
@@ -43,7 +42,7 @@ const TechStack = () => {
             <motion.abbr
               initial="hidden"
               whileInView="show"
-              variants={fadeIn("up", "", index * 0.15, 0.5)}
+              variants={fadeIn("up", "", index * 0.1, 0.3)}
               title={tech.name}
               key={tech.name}
               className={style.tech}

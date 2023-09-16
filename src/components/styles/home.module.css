@@ -60,7 +60,7 @@
   top: 10px;
   left: 13px;
   opacity: 0;
-  transform: translate(0, -100%);
+  /* transform: translate(0, -100%); */
 }
 
 .arrow {
