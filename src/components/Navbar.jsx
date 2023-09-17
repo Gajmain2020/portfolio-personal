@@ -132,7 +132,7 @@ const Navbar = () => {
               variants={fadeIn("right", "", 1, 1)}
               initial="hidden"
               whileInView="show"
-              href="https://drive.google.com/file/d/1gienfnTWEgMC_R2P7t-JVSQC9L_4lLxv/view?usp=sharing"
+              href="https://drive.google.com/file/d/1IfOWobTg-qTlvwj7OTHt938vAEOBg2e3/view?usp=sharing"
               target=" blank"
               className={`${style.resume_container} ${style.mobile_resume_container}`}
             >
